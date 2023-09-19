@@ -1,6 +1,6 @@
 <?php
 
-namespace App\QueryHandler;
+namespace App\Infrastructure\QueryHandler;
 
 interface QueryHandler
 {

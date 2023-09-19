@@ -1,6 +1,6 @@
 <?php
 
-namespace App\CommandHandler;
+namespace App\Infrastructure\CommandHandler;
 
 interface CommandHandler
 {

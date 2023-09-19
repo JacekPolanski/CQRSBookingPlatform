@@ -18,7 +18,7 @@ doctrine:
             App\Domain\Room:
                 type: xml
                 is_bundle: false
-                dir: '%kernel.project_dir%/src/Infrastructure/ORM/Mapping'
+                dir: '%kernel.project_dir%/src/Infrastructure/ORM/Doctrine/Mapping'
                 prefix: 'App\Domain\Room'
                 alias: 'Room'
 

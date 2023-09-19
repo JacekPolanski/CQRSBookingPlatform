@@ -1,8 +1,8 @@
 <?php
 
-namespace App\QueryBus;
+namespace App\Infrastructure\QueryBus;
 
-use App\Query\Query;
+use App\Application\Query\Query;
 
 interface QueryBus
 {

@@ -1,15 +1,15 @@
 <?php declare(strict_types=1);
 
-namespace App\CommandHandler;
+namespace App\Infrastructure\CommandHandler;
 
-use App\Command\CreateRoomCommand;
+use App\Application\Command\CreateRoomCommand;
 use App\Domain\Room\Room;
-use App\Domain\Room\RoomRepository;
-use App\Exception\RoomNameTaken;
+use App\Domain\Room\Rooms;
+use App\Infrastructure\Exception\RoomNameTaken;
 
 final readonly class CreateRoomHandler implements CommandHandler
 {
-    public function __construct(private RoomRepository $rooms)
+    public function __construct(private Rooms $rooms)
     {}
 
     public function __invoke(CreateRoomCommand $command): void

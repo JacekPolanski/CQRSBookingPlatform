@@ -2,15 +2,16 @@
 
 namespace App\Domain\Room;
 
+use App\Infrastructure\ORM\Entity;
 use Ramsey\Uuid\Uuid;
 
-class Room
+readonly class Room implements Entity
 {
     private function __construct(
-        public readonly string $id,
-        public readonly string $name,
-        public readonly int $count,
-        public readonly int $bookedCount
+        public string $id,
+        public string $name,
+        public int $count,
+        public int $bookedCount
     ) {}
 
     public static function createNew(string $name, int $count): self

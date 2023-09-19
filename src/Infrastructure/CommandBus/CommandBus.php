@@ -1,8 +1,8 @@
 <?php
 
-namespace App\CommandBus;
+namespace App\Infrastructure\CommandBus;
 
-use App\Command\Command;
+use App\Application\Command\Command;
 
 interface CommandBus
 {

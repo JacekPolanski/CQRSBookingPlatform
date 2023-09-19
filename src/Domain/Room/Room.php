@@ -2,12 +2,19 @@
 
 namespace App\Domain\Room;
 
+use Ramsey\Uuid\Uuid;
+
 class Room
 {
-    public function __construct(
+    private function __construct(
         public readonly string $id,
         public readonly string $name,
-        public readonly string $count,
+        public readonly int $count,
         public readonly int $bookedCount
     ) {}
+
+    public static function createNew(string $name, int $count): self
+    {
+        return new self(Uuid::uuid4()->toString(), $name, $count, 0);
+    }
 }

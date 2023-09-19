@@ -10,7 +10,7 @@
             <generator strategy="NONE"/>
         </id>
 
-        <field name="name" />
+        <field name="name" unique="true"/>
         <field name="count" type="integer" />
         <field name="bookedCount" type="integer" />
 

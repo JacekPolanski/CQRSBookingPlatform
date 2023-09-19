@@ -10,7 +10,7 @@ readonly class Room implements Entity
     private function __construct(
         public string $id,
         public string $name,
-        public int $count,
+        public int $count, //ToDo: change to $availableCount
         public int $bookedCount
     ) {}
 

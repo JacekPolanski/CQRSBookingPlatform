@@ -1,3 +1,5 @@
+# Demo CQRS Project
+
 ## Getting Started
 
 1. If not already done, [install Docker Compose](https://docs.docker.com/compose/install/) (v2.10+)
